@@ -1,5 +1,6 @@
 # AgentBeats Leaderboard Assessment Scenario
 # Submission refresh after enabling GitHub Actions on the fork.
+# Submission refresh after amber-manifest resolver fix.
 # This file defines the assessment configuration for the CAR-bench leaderboard
 
 [green_agent]
