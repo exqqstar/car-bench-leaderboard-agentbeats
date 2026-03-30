@@ -4,15 +4,15 @@
 [green_agent]
 # CAR-bench green agent (benchmark environment)
 agentbeats_id = "019bb9d5-c273-7ba0-8beb-34e2fb140c10" 
-# Submitter: Add GEMINI_API_KEY as GitHub Secret (required for CAR-bench)
-env = { GEMINI_API_KEY = "${GEMINI_API_KEY}", LOGURU_LEVEL = "${LOGURU_LEVEL}" }
+# Submitter: Provide the evaluator model endpoint and key as GitHub Secrets
+env = { GREEN_API_BASE = "${GREEN_API_BASE}", GREEN_API_KEY = "${GREEN_API_KEY}", LOGURU_LEVEL = "INFO" }
 
 [[participants]]
 # Submitters will fill in their purple agent details
-agentbeats_id = "019c302c-cfb9-7091-acab-2f09b815bc86"  # Submitter: Replace with your purple agent ID
+agentbeats_id = "019d4000-fcd2-7f61-9975-0794a76ddb97"
 name = "agent" # do not change
-# Submitter: Add your API keys as GitHub Secrets (use only what your model needs)
-env = { ANTHROPIC_API_KEY = "${ANTHROPIC_API_KEY}", AGENT_LLM = "claude-opus-4-6", AGENT_TEMPERATURE = 1.0, AGENT_THINKING = "true", LOGURU_LEVEL = "${LOGURU_LEVEL}" }
+# Submitter: Provide the purple model endpoint and key as GitHub Secrets
+env = { AGENT_API_BASE = "${AGENT_API_BASE}", AGENT_API_KEY = "${AGENT_API_KEY}", AGENT_LLM = "openai/MiniMax-M2.7", AGENT_TEMPERATURE = "0.0", AGENT_REASONING_EFFORT = "medium", LOGURU_LEVEL = "INFO" }
 
 [config]
 # CAR-bench assessment parameters
